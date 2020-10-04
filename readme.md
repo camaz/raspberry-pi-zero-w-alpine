@@ -30,3 +30,5 @@ EOF
 cd ~
 # unmount microSD and remove microSD card reader from the Mac
 ```
+
+Shamelessy borrowed from http://markbucciarelli.com/posts/2019-05-05_install-alpine-on-raspberry-pi-using-macos.html
