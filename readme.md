@@ -14,21 +14,21 @@ cd /Volumes/VOL1
 tar xzvf ~/Downloads/alpine-rpi-3.8.4-armhf.tar.gz
 
 cat>usercfg.txt<<EOF
-# On the Pi, the GPU and the CPU share RAM.  This is a headless install, so 
-# give the GPU the least amount of RAM it can get by with (16MB).
-# This also triggers the Pi to use a cutdown version of the firmware (start_cd.elf).
-gpu_mem=16
-
-# Turn off audio and bluetooth.  (Note "dt" stands for device tree.)
-dtparam=audio=off,pi3-disable-bt
-
-# Enable mini UART as serial port (/dev/ttyS0).  
-# Also, fixes VideoCore IV (aka the GPU or the VPU) frequency to 250MHz.
-enable_uart=1
-EOF
-
-cd ~
-# unmount microSD and remove microSD card reader from the Mac
 ```
+On the Pi, the GPU and the CPU share RAM.  This is a headless install, so 
+give the GPU the least amount of RAM it can get by with (16MB).
+This also triggers the Pi to use a cutdown version of the firmware (start_cd.elf).
+`gpu_mem=16`
+
+Turn off audio and bluetooth.  (Note "dt" stands for device tree.)
+`dtparam=audio=off,pi3-disable-bt`
+
+Enable mini UART as serial port (/dev/ttyS0).  
+Also, fixes VideoCore IV (aka the GPU or the VPU) frequency to 250MHz.
+`enable_uart=1`
+`EOF`
+
+`cd ~`
+unmount microSD and remove microSD card reader from the Mac
 
 Shamelessy borrowed from http://markbucciarelli.com/posts/2019-05-05_install-alpine-on-raspberry-pi-using-macos.html
