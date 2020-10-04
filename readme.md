@@ -1,4 +1,4 @@
-Make sure you know for sure which disk is the microSD. If you're not sure, don't follow these steps— *you could lose all the data on your Mac.*
+Make sure you know for sure which disk is the microSD. If you're not sure, don't follow these steps— **you could lose all the data on your Mac.**
 ```
 diskutil list
 diskutil partitionDisk disk2 MBR FAT32 VOL1 256MB "Free Space" VOL2 R
